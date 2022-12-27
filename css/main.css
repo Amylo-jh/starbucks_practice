@@ -393,8 +393,20 @@ header .badges .badge {
 
 .notice .notice-line .inner__left .swiper-container {
     height: 62px;
-    background-color: orange;
     flex-grow: 1;
+
+}
+
+.notice .notice-line .inner__left .swiper-slide {
+    height: 62px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.notice .notice-line .inner__left .swiper-slide a {
+    color: #fff;
 }
 
 .notice .notice-line .inner__left .notice-line__more {
@@ -434,4 +446,37 @@ header .badges .badge {
 
 .notice .notice-line .inner__right .toggle-promotion .material-icons {
     font-size: 30px;
+}
+
+.notice .promotion {
+    height: 693px;
+    background-color: #f6f5ef;
+    position: relative;
+}
+
+.notice .promotion .swiper-container{
+    width: calc(819px * 3 + 20px);
+    height: 553px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: calc( (819px * 3 + 20px) / -2);
+}
+
+.notice .promotion .swiper-slide {
+    opacity: 0.5;
+    transition: opacity 1s;
+    position: relative;
+}
+
+.notice .promotion .swiper-slide-active {
+    opacity: 1;
+}
+
+.notice .promotion .swiper-slide .btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
