@@ -121,12 +121,12 @@ floatingObject('.floating2', .5, 15);
 floatingObject('.floating3', 1.5, 20);
 
 const spyEls = document.querySelectorAll('section.scroll-spy');
-spyELs.forEach( function (spyEl) {
+spyEls.forEach( function (spyEl) {
     new ScrollMagic
         .Scene({
             triggerElement: spyEl,   //보여질 여부를 감시할 요소를 지정
             triggerHook: .8 // 화면 상단을 0, 하단을 1로 했을 때 어디 지점을 트리거 지점으로 할지 지정
         })
-        .setClassToggle()
-        .addTo();
+        .setClassToggle(spyEl, 'show')
+        .addTo(new ScrollMagic.Controller());
 })
