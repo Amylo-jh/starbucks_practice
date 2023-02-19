@@ -144,3 +144,6 @@ spyEls.forEach( function (spyEl) {
         .setClassToggle(spyEl, 'show')
         .addTo(new ScrollMagic.Controller());
 })
+
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear(); // 해당 년도의 숫자를 반환한다.
